@@ -1,0 +1,168 @@
+.grillaIndex {
+    display: grid;
+}
+
+
+
+body {
+    background: rgb(221, 255, 188);
+    background: radial-gradient(circle, rgba(221, 255, 188, 1) 0%, rgba(225, 255, 196, 1) 100%);
+}
+
+.imgMate {
+    display: flex;
+    max-width: 100%;
+}
+
+.img-mobile {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+        max-width: 100%;
+        padding: 0%;
+    }
+}
+
+.foto1,
+.foto2,
+.foto3,
+.foto4 {
+    background-color: $fondotitulos;
+    border-radius: 5px;
+    margin: 20px;
+    border: 5px $fondo solid;
+
+    .btn {
+        background-color: $fondo;
+        border: $fondo;
+    }
+}
+
+.titulo-index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: $miletraprincipal;
+    background-color: $fondotitulos;
+    padding: 5px;
+    height: 60px;
+
+    h2 {
+        font-size: medium;
+    }
+}
+
+.flexiando {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.messi1 {
+    grid-area: messi1;
+    @extend .flexiando
+}
+
+.roman1 {
+    grid-area: roman1;
+    @extend .flexiando
+}
+
+.marado1 {
+    grid-area: marado1;
+    @extend .flexiando
+}
+
+.tevez1 {
+    grid-area: marado1;
+    @extend .flexiando
+}
+
+.circle1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: $fondo 5px solid;
+    max-width: 260px;
+    margin: 10px;
+}
+
+.memes {
+    @extend .titulo-index;
+
+    h2 {
+        font-size: medium;
+    }
+}
+
+/*Grilla*/
+.img-mobile {
+    display: grid;
+    grid-area: imgMobile
+}
+
+.titulo-index {
+    display: grid;
+    grid-area: tituloIndex;
+}
+
+.foto1 {
+    display: grid;
+    grid-area: foto1;
+}
+
+.foto2 {
+    display: grid;
+    grid-area: foto2;
+}
+
+.foto3 {
+    display: grid;
+    grid-area: foto3;
+}
+
+.foto4 {
+    display: grid;
+    grid-area: foto4;
+}
+
+.memes {
+    display: grid;
+    grid-area: memes;
+}
+
+.messi1 {
+    display: grid;
+    grid-area: messi1;
+}
+
+.roman1 {
+    display: grid;
+    grid-area: roman1;
+}
+
+.marado1 {
+    display: grid;
+    grid-area: marado1;
+}
+
+.tevez1 {
+    display: grid;
+    grid-area: tevez1;
+}
+
+.wspIcon {
+    position: fixed;
+    z-index: 1;
+    bottom: 20px;
+    right: 20px;
+    box-shadow: 0px 0px 5px black;
+    border-radius: 50%;
+    padding: 2px;
+    background-color: white;
+}

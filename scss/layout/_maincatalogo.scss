@@ -1,0 +1,134 @@
+.grillaCatalogo {
+    margin-top: 120px;
+
+    img {
+        max-width: 240px;
+    }
+    font-family: $miletraprincipal;
+}
+
+.titulo3 {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: $fondo;
+    background-color: $fondotitulos;
+    font-family: $miletraprincipal;
+    height: 60px;
+
+    h2 {
+        font-size: medium;
+        padding: 0%;
+    }
+}
+
+h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    font-family: $miletraprincipal;
+}
+
+h3 {
+    @extend h2;
+    font-size: medium;
+}
+
+.zoomCat {
+    border: black 1px solid;
+    border-radius: 5%;
+}
+
+.zoomCat:hover {
+    transform: scale(1.05);
+}
+
+.titulo3 {
+    grid-area: titulo3;
+}
+
+.flexiandoCat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: gray;
+    border-radius: 3%;
+    justify-content: center;
+    color: $colorfuente;
+    margin: 10px;
+}
+
+.producto1 {
+    grid-area: producto1;
+    @extend .flexiandoCat
+}
+
+.producto2 {
+    grid-area: producto2;
+    @extend .flexiandoCat
+}
+
+.producto3 {
+    grid-area: producto3;
+    @extend .flexiandoCat
+}
+
+.producto4 {
+    grid-area: producto4;
+    @extend .flexiandoCat
+}
+
+.producto5 {
+    grid-area: producto5;
+    @extend .flexiandoCat
+}
+
+.producto6 {
+    grid-area: producto6;
+    @extend .flexiandoCat
+}
+
+.producto7 {
+    grid-area: producto7;
+    @extend .flexiandoCat
+}
+
+.producto8 {
+    grid-area: producto8;
+    @extend .flexiandoCat
+}
+
+.producto9 {
+    grid-area: producto9;
+    @extend .flexiandoCat
+}
+
+.producto10 {
+    grid-area: producto10;
+    @extend .flexiandoCat
+}
+
+.producto11 {
+    grid-area: producto11;
+    @extend .flexiandoCat
+}
+
+.producto12 {
+    grid-area: producto12;
+    @extend .flexiandoCat
+}
+
+.editandoNombres {
+    display: flex;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.espaciando {
+    @extend .editandoNombres
+}

@@ -1,0 +1,27 @@
+.formu1{
+    border: black 5px double;margin: 50px 0px 50px 0px;
+    background-color: gray ;
+    color: $colorfuente;
+    padding: 20px;
+}
+.titulo6{margin-top: 120px;}
+.flexFormu{display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;}
+.titulo6{
+    grid-area: titulo4;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: $fondo;
+    background-color: $fondotitulos;
+    font-family: $miletraprincipal;
+    height: 60px;
+
+    h2 {
+        font-size: medium;
+        padding: 0%;
+    }
+}

@@ -1,0 +1,23 @@
+footer {
+    height: 150px;
+    margin-top: 10px;
+    grid-area: footer;
+    background-color: $fondo;
+    font-family: $miletraprincipal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;h2{font-size: medium;}
+    margin-bottom: 0px;
+nav{
+
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+        margin-bottom: 0px;
+        padding-left: 0px;
+        li{padding: 10px;}
+    }
+}}

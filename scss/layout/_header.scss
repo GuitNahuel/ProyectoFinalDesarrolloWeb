@@ -1,0 +1,41 @@
+header {
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: $fondo;
+    color: $colorfuente;
+    font-family: $miletraprincipal;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    h1{
+    font-size: x-large;
+    font-family: $miletraprincipal;
+    font-weight: bold;}
+
+    a {
+        font-size:medium;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img{padding: 5px;}
+
+
+        &:hover {
+            color: white;
+        }
+
+        nav ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: row;
+        }
+    }
+}

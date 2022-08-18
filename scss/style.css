@@ -1,0 +1,752 @@
+@media screen and (min-width: 260px) {
+  .grillaIndex {
+    gap: 20px;
+    grid-template-areas: "imgMobile" "tituloIndex" "foto1" "foto2" "foto3" "foto4" "memes" "messi1" "marado1" "roman1" "tevez1";
+  }
+  .grillaIndex .circle1 img {
+    max-width: 80%;
+  }
+  .portada {
+    display: none;
+  }
+  .grillaQuienes {
+    grid-template-areas: "titulo2" "foto-grupo" "textoquien" "textoLocal" "local1" "local2";
+  }
+}
+@media screen and (min-width: 576px) {
+  .grillaIndex {
+    grid-template-areas: "imgMobile imgMobile" "tituloIndex tituloIndex" "foto1 foto2" "foto3 foto4" "memes memes" "messi1 marado1" "roman1 tevez1";
+  }
+  .grillaIndex .circle1 {
+    max-width: 90%;
+  }
+  .portada {
+    display: none;
+  }
+  .grillaQuienes {
+    grid-template-areas: "titulo2 titulo2" "textoquien textoquien" "foto-grupo foto-grupo" "textoLocal textoLocal" "local1 local2";
+  }
+  .grillaCatalogo {
+    display: grid;
+    grid-template-areas: "titulo3 titulo3" "producto1 producto2" "producto3 producto4" "producto5 producto6" "producto7 producto8" "producto9 producto10" "producto11 producto12";
+  }
+}
+@media screen and (min-width: 992px) {
+  .grillaIndex {
+    grid-template-areas: "tituloIndex tituloIndex tituloIndex tituloIndex" "foto1 foto2 foto3 foto4" "memes memes memes memes" "messi1 marado1 roman1 tevez1";
+    margin: 0px 100px 0px 100px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+  }
+  .grillaIndex .img-mobile {
+    display: none;
+  }
+  .grillaIndex .circle1 {
+    max-width: 90%;
+  }
+  .portada {
+    margin-top: 100px;
+    display: flex;
+  }
+  .portada .miCarro {
+    max-width: 100%;
+  }
+  .elementosNav {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .grillaQuienes {
+    grid-template-areas: "titulo2 titulo2 titulo2" "foto-grupo foto-grupo foto-grupo" "textoquien textoquien textoquien" "local1 textoLocal local2";
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .grillaQuienes .foto-principal {
+    max-width: 80%;
+  }
+  .grillaCatalogo {
+    display: grid;
+    grid-template-areas: "titulo3 titulo3 titulo3" "producto1 producto2 producto3" "producto4 producto5 producto6" "producto7 producto8 producto9" "producto10 producto11 producto12";
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .grillaComo {
+    display: grid;
+    grid-template-areas: "titulo4 titulo4 titulo4" "listaCompra listaCompra listaCompra" "enviosM cuotasM descuentoM";
+    gap: 20px;
+    margin: 50px 150px 50px 150px;
+  }
+  .titulo6 {
+    margin: 50px 100px 50px 100px;
+  }
+}
+.grillaIndex {
+  display: grid;
+}
+
+body {
+  background: rgb(221, 255, 188);
+  background: radial-gradient(circle, rgb(221, 255, 188) 0%, rgb(225, 255, 196) 100%);
+}
+
+.imgMate {
+  display: flex;
+  max-width: 100%;
+}
+
+.img-mobile {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.img-mobile img {
+  max-width: 100%;
+  padding: 0%;
+}
+
+.foto1,
+.foto2,
+.foto3,
+.foto4 {
+  background-color: #91C788;
+  border-radius: 5px;
+  margin: 20px;
+  border: 5px #52734D solid;
+}
+.foto1 .btn,
+.foto2 .btn,
+.foto3 .btn,
+.foto4 .btn {
+  background-color: #52734D;
+  border: #52734D;
+}
+
+.titulo-index, .memes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Josefin Sans", sans-serif;
+  background-color: #91C788;
+  padding: 5px;
+  height: 60px;
+}
+.titulo-index h2, .titulo-index h3, .memes h2, .memes h3 {
+  font-size: medium;
+}
+
+.flexiando, .tevez1, .marado1, .roman1, .messi1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.messi1 {
+  grid-area: messi1;
+}
+
+.roman1 {
+  grid-area: roman1;
+}
+
+.marado1 {
+  grid-area: marado1;
+}
+
+.tevez1 {
+  grid-area: marado1;
+}
+
+.circle1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: #52734D 5px solid;
+  max-width: 260px;
+  margin: 10px;
+}
+
+.memes h2, .memes h3 {
+  font-size: medium;
+}
+
+/*Grilla*/
+.img-mobile {
+  display: grid;
+  grid-area: imgMobile;
+}
+
+.titulo-index, .memes {
+  display: grid;
+  grid-area: tituloIndex;
+}
+
+.foto1 {
+  display: grid;
+  grid-area: foto1;
+}
+
+.foto2 {
+  display: grid;
+  grid-area: foto2;
+}
+
+.foto3 {
+  display: grid;
+  grid-area: foto3;
+}
+
+.foto4 {
+  display: grid;
+  grid-area: foto4;
+}
+
+.memes {
+  display: grid;
+  grid-area: memes;
+}
+
+.messi1 {
+  display: grid;
+  grid-area: messi1;
+}
+
+.roman1 {
+  display: grid;
+  grid-area: roman1;
+}
+
+.marado1 {
+  display: grid;
+  grid-area: marado1;
+}
+
+.tevez1 {
+  display: grid;
+  grid-area: tevez1;
+}
+
+.wspIcon {
+  position: fixed;
+  z-index: 1;
+  bottom: 20px;
+  right: 20px;
+  box-shadow: 0px 0px 5px black;
+  border-radius: 50%;
+  padding: 2px;
+  background-color: white;
+}
+
+.grillaCatalogo {
+  margin-top: 120px;
+  font-family: "Josefin Sans", sans-serif;
+}
+.grillaCatalogo img {
+  max-width: 240px;
+}
+
+.titulo3 {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border: #52734D;
+  background-color: #91C788;
+  font-family: "Josefin Sans", sans-serif;
+  height: 60px;
+}
+.titulo3 h2, .titulo3 h3 {
+  font-size: medium;
+  padding: 0%;
+}
+
+h2, h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+h3 {
+  font-size: medium;
+}
+
+.zoomCat {
+  border: black 1px solid;
+  border-radius: 5%;
+}
+
+.zoomCat:hover {
+  transform: scale(1.05);
+}
+
+.titulo3 {
+  grid-area: titulo3;
+}
+
+.flexiandoCat, .producto12, .producto11, .producto10, .producto9, .producto8, .producto7, .producto6, .producto5, .producto4, .producto3, .producto2, .producto1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: gray;
+  border-radius: 3%;
+  justify-content: center;
+  color: #DBE2EF;
+  margin: 10px;
+}
+
+.producto1 {
+  grid-area: producto1;
+}
+
+.producto2 {
+  grid-area: producto2;
+}
+
+.producto3 {
+  grid-area: producto3;
+}
+
+.producto4 {
+  grid-area: producto4;
+}
+
+.producto5 {
+  grid-area: producto5;
+}
+
+.producto6 {
+  grid-area: producto6;
+}
+
+.producto7 {
+  grid-area: producto7;
+}
+
+.producto8 {
+  grid-area: producto8;
+}
+
+.producto9 {
+  grid-area: producto9;
+}
+
+.producto10 {
+  grid-area: producto10;
+}
+
+.producto11 {
+  grid-area: producto11;
+}
+
+.producto12 {
+  grid-area: producto12;
+}
+
+.editandoNombres, .espaciando {
+  display: flex;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.grillaComo {
+  margin-top: 120px;
+}
+
+.titulo4 {
+  grid-area: titulo4;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border: #52734D;
+  background-color: #91C788;
+  font-family: "Josefin Sans", sans-serif;
+  height: 60px;
+}
+.titulo4 h2, .titulo4 h3 {
+  font-size: medium;
+  padding: 0%;
+}
+
+.listaCompra {
+  grid-area: listaCompra;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #DDFFBC;
+  color: black;
+  padding: 20px;
+  margin: 50px;
+  border-radius: 10px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.tresTarjetas, .descuentoM, .cuotasM, .enviosM {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+  border: 5px double #52734D;
+  border-radius: 10%;
+}
+
+.enviosM {
+  grid-area: enviosM;
+}
+
+.cuotasM {
+  grid-area: cuotasM;
+}
+
+.descuentoM {
+  grid-area: descuentoM;
+}
+
+.grillaQuienes {
+  margin-top: 115px;
+  display: grid;
+}
+
+.titulo2 {
+  grid-area: titulo2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Josefin Sans", sans-serif;
+  background-color: #91C788;
+  padding: 5px;
+  height: 60px;
+}
+.titulo2 h2, .titulo2 h3 {
+  font-size: medium;
+}
+
+.foto-grupo {
+  grid-area: foto-grupo;
+}
+
+.textoquien {
+  grid-area: textoquien;
+}
+
+.local1 {
+  grid-area: local1;
+}
+
+.local2 {
+  grid-area: local2;
+}
+
+.textoLocal {
+  grid-area: textoLocal;
+}
+
+.fotosQuien {
+  max-width: 280px;
+}
+
+.textoGen, .textoLocal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.textoGen p, .textoLocal p {
+  color: white;
+  border-radius: 10px;
+  background-color: gray;
+  font-family: "Josefin Sans", sans-serif;
+  padding: 10px;
+}
+
+.local1 img,
+.local2 img {
+  border-radius: 50%;
+  border: #52734D 5px solid;
+}
+
+.foto-grupo,
+.local1,
+.local2 {
+  display: flex;
+  justify-content: center;
+}
+
+.formu1 {
+  border: black 5px double;
+  margin: 50px 0px 50px 0px;
+  background-color: gray;
+  color: #DBE2EF;
+  padding: 20px;
+}
+
+.titulo6 {
+  margin-top: 120px;
+}
+
+.flexFormu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.titulo6 {
+  grid-area: titulo4;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border: #52734D;
+  background-color: #91C788;
+  font-family: "Josefin Sans", sans-serif;
+  height: 60px;
+}
+.titulo6 h2, .titulo6 h3 {
+  font-size: medium;
+  padding: 0%;
+}
+
+footer {
+  height: 150px;
+  margin-top: 10px;
+  grid-area: footer;
+  background-color: #52734D;
+  font-family: "Josefin Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 0px;
+}
+footer h2, footer h3 {
+  font-size: medium;
+}
+footer nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+footer nav ul li {
+  padding: 10px;
+}
+
+header {
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #52734D;
+  color: #DBE2EF;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  padding: 0px;
+}
+.navbar h1 {
+  font-size: x-large;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
+}
+.navbar a {
+  font-size: medium;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.navbar a img {
+  padding: 5px;
+}
+.navbar a:hover {
+  color: white;
+}
+.navbar a nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.rotate-center {
+  -webkit-animation: rotate-center 0.6s ease-in-out both;
+  animation: rotate-center 0.6s ease-in-out both;
+}
+
+@-webkit-keyframes rotate-center {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-center {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.bounce-in-top {
+  -webkit-animation: bounce-in-top 1.1s both;
+  animation: bounce-in-top 1.1s both;
+}
+
+@-webkit-keyframes bounce-in-top {
+  0% {
+    transform: translateY(-500px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    transform: translateY(-65px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  72% {
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  81% {
+    transform: translateY(-28px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  90% {
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  95% {
+    transform: translateY(-8px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+@keyframes bounce-in-top {
+  0% {
+    transform: translateY(-500px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    transform: translateY(-65px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  72% {
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  81% {
+    transform: translateY(-28px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  90% {
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  95% {
+    transform: translateY(-8px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+.zoom {
+  padding: 50px;
+  transition: transform 0.2s;
+  /* Animation */
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.1);
+}
+
+.tracking-in-contract {
+  -webkit-animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+
+@-webkit-keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}/*# sourceMappingURL=style.css.map */

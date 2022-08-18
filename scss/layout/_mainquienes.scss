@@ -1,0 +1,61 @@
+.grillaQuienes {
+    margin-top: 115px;
+    display: grid;
+}
+
+.titulo2 {
+    grid-area: titulo2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: $miletraprincipal;
+    background-color: $fondotitulos;
+    padding: 5px;
+    height: 60px;
+
+    h2 {
+        font-size: medium;
+    }
+
+}
+.foto-grupo{grid-area: foto-grupo;}
+.textoquien{grid-area: textoquien;}
+.local1{grid-area: local1;}
+.local2{grid-area: local2;}
+.textoLocal{grid-area: textoLocal;}
+
+.fotosQuien {
+    max-width: 280px;
+}
+
+.textoGen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+
+    p {
+        color: white;
+        border-radius: 10px;
+        background-color: gray;
+        font-family: $miletraprincipal;
+        padding: 10px;
+    }
+}
+
+.local1 img,
+.local2 img {
+    border-radius: 50%;
+    border: $fondo 5px solid;
+}
+
+.foto-grupo,
+.local1,
+.local2 {
+    display: flex;
+    justify-content: center;
+}
+.textoLocal{
+    @extend .textoGen;
+}

@@ -1,0 +1,58 @@
+.grillaComo{margin-top: 120px;}
+.titulo4 {
+    grid-area: titulo4;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: $fondo;
+    background-color: $fondotitulos;
+    font-family: $miletraprincipal;
+    height: 60px;
+
+    h2 {
+        font-size: medium;
+        padding: 0%;
+    }
+}
+
+.listaCompra {
+    grid-area: listaCompra;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: $colormain;
+    color: black;
+    padding: 20px;
+    margin: 50px;
+    border-radius: 10px;
+    font-family: $miletraprincipal;
+}
+
+.tresTarjetas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    margin:  20px;
+    border: 5px double $fondo;
+    border-radius: 10%;
+}
+
+.enviosM {
+    grid-area: enviosM;
+    @extend .tresTarjetas
+}
+
+.cuotasM {
+    grid-area: cuotasM;
+    @extend .tresTarjetas
+}
+
+.descuentoM {
+    grid-area: descuentoM;
+    @extend .tresTarjetas
+}
